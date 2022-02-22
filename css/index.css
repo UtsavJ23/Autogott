@@ -69,7 +69,76 @@ header{
     font-weight: 600;
     font-size: 2rem;
 }
-
+.heading h1::after{
+    font-weight: 400;
+    white-space: pre-wrap;
+    content: "hello";
+    animation: textchange 3s alternate infinite ease-in-out;
+}
+@keyframes textchange {
+    0% {
+    content: "\aIt's |";}
+  5% {
+    content: "\aIt's not|";
+  }
+  10% {
+    content: "\aIt's not jus|";
+}
+  15% {
+    content: "\aIt's not just Y|";
+}
+  20% {
+    content: "\aIt's not just YOUR|";
+  }
+  25% {
+    content: "\aIt's not just YOUR CAR,|";
+  }
+  30% {
+    content: "\aIt's not just YOUR CAR,|";
+  }
+  35% {
+    content: "\aIt's not just YOUR CAR,|";
+  }
+  40% {
+    content: "\aIt's not just YOUR CAR,";
+  }
+  45% {
+    content: "\aIt's not just YOUR |";
+  }
+  50% {
+    content: "\aIt's not just Y |";
+  }
+  55% {
+    content: "\aIt's not jus|";
+  }
+  60% {
+    content: "\aIt's no|";
+  }
+  65% {
+    content: "\aIt's |";
+  }
+  70% {
+    content: "\aIt's OU|";
+  }
+  75% {
+    content: "\aIt's OUR C|";
+  }
+  80% {
+    content: "\aIt's OUR CAR|";
+  }
+  85% {
+    content: "\aIt's OUR CAR TO|";
+  }
+  90% {
+    content: "\aIt's OUR CAR TOO!|";
+  }
+  95% {
+    content: "\aIt's OUR CAR TOO!|";
+  }
+  100% {
+    content: "\aIt's OUR CAR TOO!|";
+  }
+}
 .services{
     margin-top: 5rem;
 }
