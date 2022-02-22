@@ -62,36 +62,37 @@ header{
     left:50%;
     font-size:1rem;
     transform: translate(-50%,-50%);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 .heading h1{
     text-align: center;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 4rem;
 }
 .heading h1::after{
     font-weight: 400;
     white-space: pre-wrap;
-    content: "hello";
-    animation: textchange 3s alternate infinite ease-in-out;
+    font-size: 2rem;
+    content: "";
+    animation: textchange 4s alternate infinite ease-in-out;
 }
 @keyframes textchange {
     0% {
     content: "\aIt's |";}
   5% {
-    content: "\aIt's not|";
-  }
+    content: "\aIt's not";
+    }
   10% {
     content: "\aIt's not jus|";
-}
+    }
   15% {
-    content: "\aIt's not just Y|";
-}
+    content: "\aIt's not just Y";
+    }
   20% {
     content: "\aIt's not just YOUR|";
   }
   25% {
-    content: "\aIt's not just YOUR CAR,|";
+    content: "\aIt's not just YOUR CAR,";
   }
   30% {
     content: "\aIt's not just YOUR CAR,|";
@@ -106,37 +107,37 @@ header{
     content: "\aIt's not just YOUR |";
   }
   50% {
-    content: "\aIt's not just Y |";
+    content: "\aIt's not just Y ";
   }
   55% {
     content: "\aIt's not jus|";
   }
   60% {
-    content: "\aIt's no|";
+    content: "\aIt's no";
   }
   65% {
     content: "\aIt's |";
   }
   70% {
-    content: "\aIt's OU|";
+    content: "\aIt's OU";
   }
   75% {
     content: "\aIt's OUR C|";
   }
   80% {
-    content: "\aIt's OUR CAR|";
+    content: "\aIt's OUR CAR";
   }
   85% {
     content: "\aIt's OUR CAR TO|";
   }
   90% {
-    content: "\aIt's OUR CAR TOO!|";
+    content: "\aIt's OUR CAR TOO!";
   }
   95% {
     content: "\aIt's OUR CAR TOO!|";
   }
   100% {
-    content: "\aIt's OUR CAR TOO!|";
+    content: "\aIt's OUR CAR TOO!";
   }
 }
 .services{
