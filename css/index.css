@@ -90,7 +90,7 @@ header{
     text-transform: uppercase;
     padding: 10px 25px;
     border: 2px solid var(--secondary);
-    background-color: rgb(65, 133, 122, 20%);
+    background-color: rgb(65, 133, 122, 10%);
 }
 .button:hover{
     color: var(--white);
