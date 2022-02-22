@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;0,600;1,300;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
+    --white:#fff;
+    --black:#000;
+    --secondary:#41857A;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container-align{
+    width:80%;
+    margin: auto;
+}
+header{
+    height: 95vh;
+    position: relative;
+    animation: slide 5s alternate infinite ease-in-out;
+}
+@keyframes slide{
+    0%{
+        background: url('../images/IMG_20220209_154539_365.jpg') no-repeat;
+        background-size: cover;
+        background-position:50%;
+    }
+    100%{
+        background: url('../images/IMG_20220211_180339_488.jpg') no-repeat;
+        background-size: cover;
+        background-position:73%;
+    }
+}
+.navbar{
+    padding-top:2rem;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navbar-container img{
+    width: 2rem;
+}
+.nav-item{
+    display:inline-block;
+    margin:0 15px;
+    font-weight: 500;
+    font-size: 1.3rem;
+
+}
+.heading{
+    position: absolute;
+    padding:5%;
+    top:50%;
+    left:50%;
+    font-size:1rem;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.heading h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.services{
+    margin-top: 5rem;
+}
+.contents{
+    display: flex;
+    justify-content: space-between;
+}
+.head{
+    color: var(--black);
+    display: block;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.button{
+    color: var(--black);
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border: 2px solid var(--secondary);
+    background-color: rgb(65, 133, 122, 20%);
+}
+.button:hover{
+    color: var(--white);
+    background-color: var(--secondary);
+    transition: 0.2s;
+}
+footer{
+    display: flex;
+    background-color:var(--secondary);
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-top: 5rem;
+}
+
+.social{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+.social-icn{
+    margin:1rem 15px;
+}
+.icns{
+    align-self: flex-end;
+}
+.right{
+    margin:1rem 15px;
+    align-self: flex-end;
+}
+
+@media(max-width:450px)
+{
+    .navbar-container{
+        display: flex;
+        justify-content: centre;
+        flex-wrap: wrap;
+    }
+    .navbar-container img{
+        width: 2rem;
+    }
+    .nav-item{
+        display:inline-block;
+        margin:0 0.3em;
+        font-weight: 500;
+        font-size: 1.3rem;
+
+    }
+}
