@@ -190,6 +190,7 @@ header{
     font-size: 2rem;
     content: "";
     animation: textchange 4s alternate infinite ease-in-out;
+    -webkit-animation: textchange 4s alternate infinite ease-in-out;
 }
 @-webkit-keyframes textchange {
     0% {
