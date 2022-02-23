@@ -190,70 +190,82 @@ header{
     font-size: 2rem;
     content: "";
     animation: textchange 4s alternate infinite ease-in-out;
-    -webkit-animation: textchange 4s alternate infinite ease-in-out;
+    -webkit-animation: textchange 4s linear infinite ease-in-out;
 }
 @-webkit-keyframes textchange {
-    0% {
+  0% {
     content: "\aIt's |";}
-  5% {
+  4% {
     content: "\aIt's not";
     }
-  10% {
+  8% {
     content: "\aIt's not jus|";
     }
-  15% {
+  12% {
     content: "\aIt's not just Y";
     }
-  20% {
+  16% {
     content: "\aIt's not just YOUR|";
   }
-  25% {
+  20% {
     content: "\aIt's not just YOUR CAR,";
   }
-  30% {
+  24% {
     content: "\aIt's not just YOUR CAR,|";
   }
-  35% {
+  28% {
     content: "\aIt's not just YOUR CAR,|";
   }
-  40% {
+  32% {
     content: "\aIt's not just YOUR CAR,";
   }
-  45% {
+  36% {
     content: "\aIt's not just YOUR |";
   }
-  50% {
-    content: "\aIt's not just Y ";
+  40% {
+    content: "\aIt's not just  ";
   }
-  55% {
-    content: "\aIt's not jus|";
+  44% {
+    content: "\aIt's not ju|";
   }
-  60% {
+  48% {
     content: "\aIt's no";
   }
-  65% {
+  52% {
     content: "\aIt's |";
   }
-  70% {
+  56% {
     content: "\aIt's OU";
   }
-  75% {
+  60% {
     content: "\aIt's OUR C|";
   }
-  80% {
+  64% {
     content: "\aIt's OUR CAR";
   }
-  85% {
+  68% {
     content: "\aIt's OUR CAR TO|";
   }
-  90% {
+  72% {
     content: "\aIt's OUR CAR TOO!";
   }
-  95% {
+  76% {
     content: "\aIt's OUR CAR TOO!|";
   }
-  100% {
-    content: "\aIt's OUR CAR TOO!";
+  80% {
+    content: "\aIt's OUR CAR TO";
+  }
+  84% {
+    content: "\aIt's OUR CAR|";
+  }
+  88% {
+    content: "\aIt's OUR C";
+  }
+  92% {
+    content: "\aIt's OU|";
+  }
+  96% {
+    content: "\aIt's";
   }
 }
 .services{
@@ -283,6 +295,45 @@ header{
     background-color: var(--secondary);
     transition: 0.2s;
 }
+.services-list{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+
+}
+
+.flexitems{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #41857A;
+}
+
+.services-list img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: 50% 50%;
+}
+.flexitems h3{
+    position: absolute;
+    display: block;
+    color: var(--white);
+    font-size: 30px;
+    text-transform: uppercase;
+    align-self: center;
+    z-index: 2;
+    padding: 40px;
+    background-color: rgb(65, 133, 122, 10%);
+}
+.flexitems img:hover{
+    opacity:0.3;
+    transition: 0.3s ease-in-out;
+}
+
 footer{
     display: flex;
     background-color:var(--secondary);
